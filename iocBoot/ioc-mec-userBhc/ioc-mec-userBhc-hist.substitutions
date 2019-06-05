@@ -1,0 +1,52 @@
+#
+# ioc-mec-userBhc-hist.substitutions
+#
+# Uses the generated ai_hist_pattern.db template
+# to create history waveforms for each of the
+# specified PV's along with AVG, MAX, MIN,
+# RMS, and StdDev for each history.
+#
+# Required Macros:
+#	PV		 - PV name
+#	EGU		 - Engineering units, default to ""
+#	RMS_LOLO - Low  alarm   limit for $(PV):Hist:LAST_N:RMS, default 0
+#	RMS_LOW  - Low  warning limit for $(PV):Hist:LAST_N:RMS, default 0
+#	RMS_HIGH - High warning limit for $(PV):Hist:LAST_N:RMS, default 0
+#	RMS_HIHI - High alarm   limit for $(PV):Hist:LAST_N:RMS, default 0
+
+file ai_hist_pattern.db
+{
+	pattern
+	{	PV,							EGU,	RMS_LOLO,	RMS_LOW,	RMS_HIGH,	RMS_HIHI	}
+	{	MEC:USR:AIN:1,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:2,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:3,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:4,				V,		0,			0,			0,			0,			}
+	{	MEC:TC1:MMS:10:TEMP,		V,		0,			0,			0,			0,			}
+	{	MEC:TC1:MMS:11:TEMP,		V,		0,			0,			0,			0,			}
+	{	MEC:TC1:MMS:12:TEMP,		V,		0,			0,			0,			0,			}
+	{	MEC:TC1:MMS:13:TEMP,		V,		0,			0,			0,			0,			}
+	{	MEC:USR:STC:5,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:STC:6,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:STC:7,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:STC:8,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:TC:1,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:TC:2,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:TC:3,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:TC:4,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:5,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:6,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:7,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:8,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:9,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:10,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:11,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AIN:12,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AOUT:1,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AOUT:2,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AOUT:3,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AOUT:4,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AOUT:5,				V,		0,			0,			0,			0,			}
+	{	MEC:USR:AOUT:6,				V,		0,			0,			0,			0,			}
+	{	MEC:FS1:MMS:01,				mm,		0,			0,			0,			0,			}
+}

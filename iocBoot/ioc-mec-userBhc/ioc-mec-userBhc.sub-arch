@@ -1,0 +1,109 @@
+# IOC archive file
+
+# Generate IOC archive request 
+file archive_userBhc.archive
+{
+	{ IOC = MEC:USR, COUPLER_LOC = MEC:R62:BHC:02B }
+}
+
+# Beckhoff signals
+file KL2124-signal.tpl-arch
+{
+	{ SIG = MEC:USR:DOT:1 }
+	{ SIG = MEC:USR:DOT:2 }
+	{ SIG = MEC:USR:DOT:3 }
+	{ SIG = MEC:USR:DOT:4 }
+}
+
+file KL2512-signal.tpl-arch
+{
+	{ SIG = MEC:USR:CIL:1 }
+	{ SIG = MEC:USR:CIL:2 }
+	{ SIG = MEC:USR:CIL:3 }
+	{ SIG = MEC:USR:CIL:4 }
+}
+
+file KL3162-signal.tpl-arch
+{
+	{ SIG = MEC:USR:AIN:1 }
+	{ SIG = MEC:USR:AIN:2 }
+	{ SIG = MEC:USR:AIN:3 }
+	{ SIG = MEC:USR:AIN:4 }
+}
+
+file KL3204-signal.tpl-arch
+{
+	{ SIG = MEC:TC1:MMS:10:RAW_TEMP }
+	{ SIG = MEC:TC1:MMS:11:RAW_TEMP }
+	{ SIG = MEC:TC1:MMS:12:RAW_TEMP }
+	{ SIG = MEC:TC1:MMS:13:RAW_TEMP }
+	{ SIG = MEC:USR:STC:5 }
+	{ SIG = MEC:USR:STC:6 }
+	{ SIG = MEC:USR:STC:7 }
+	{ SIG = MEC:USR:STC:8 }
+}
+
+file KL3312-signal.tpl-arch
+{
+	{ SIG = MEC:USR:TC:1 }
+	{ SIG = MEC:USR:TC:2 }
+	{ SIG = MEC:USR:TC:3 }
+	{ SIG = MEC:USR:TC:4 }
+}
+
+file KL3404-signal.tpl-arch
+{
+	{ SIG = MEC:USR:AIN:5 }
+	{ SIG = MEC:USR:AIN:6 }
+	{ SIG = MEC:USR:AIN:7 }
+	{ SIG = MEC:USR:AIN:8 }
+	{ SIG = MEC:USR:AIN:9 }
+	{ SIG = MEC:USR:AIN:10 }
+	{ SIG = MEC:USR:AIN:11 }
+	{ SIG = MEC:USR:AIN:12 }
+}
+
+file KL4132-signal.tpl-arch
+{
+	{ SIG = MEC:USR:AOUT:1 }
+	{ SIG = MEC:USR:AOUT:2 }
+	{ SIG = MEC:USR:AOUT:3 }
+	{ SIG = MEC:USR:AOUT:4 }
+	{ SIG = MEC:USR:AOUT:5 }
+	{ SIG = MEC:USR:AOUT:6 }
+}
+
+# Keep history arrays and statistics for these PV's
+file history.tpl-arch
+{
+	{ PV = MEC:USR:AIN:1 }
+	{ PV = MEC:USR:AIN:2 }
+	{ PV = MEC:USR:AIN:3 }
+	{ PV = MEC:USR:AIN:4 }
+	{ PV = MEC:TC1:MMS:10:TEMP }
+	{ PV = MEC:TC1:MMS:11:TEMP }
+	{ PV = MEC:TC1:MMS:12:TEMP }
+	{ PV = MEC:TC1:MMS:13:TEMP }
+	{ PV = MEC:USR:STC:5 }
+	{ PV = MEC:USR:STC:6 }
+	{ PV = MEC:USR:STC:7 }
+	{ PV = MEC:USR:STC:8 }
+	{ PV = MEC:USR:TC:1 }
+	{ PV = MEC:USR:TC:2 }
+	{ PV = MEC:USR:TC:3 }
+	{ PV = MEC:USR:TC:4 }
+	{ PV = MEC:USR:AIN:5 }
+	{ PV = MEC:USR:AIN:6 }
+	{ PV = MEC:USR:AIN:7 }
+	{ PV = MEC:USR:AIN:8 }
+	{ PV = MEC:USR:AIN:9 }
+	{ PV = MEC:USR:AIN:10 }
+	{ PV = MEC:USR:AIN:11 }
+	{ PV = MEC:USR:AIN:12 }
+	{ PV = MEC:USR:AOUT:1 }
+	{ PV = MEC:USR:AOUT:2 }
+	{ PV = MEC:USR:AOUT:3 }
+	{ PV = MEC:USR:AOUT:4 }
+	{ PV = MEC:USR:AOUT:5 }
+	{ PV = MEC:USR:AOUT:6 }
+}

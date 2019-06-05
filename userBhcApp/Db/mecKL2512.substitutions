@@ -1,0 +1,39 @@
+#	Load one instance of this template for each instance
+#	of this module.
+#	Macros left to dbLoad time:
+#		SLOT	- Slot number
+#		SIG1	- PV prefix for signal 1
+#		SIG2	- PV prefix for signal 2
+file KL2512.template
+{
+	pattern
+	{	REPROCEVT,
+		SIG1,	
+			SIG1.DESC,	SIG1.UNIT,
+			SIG1.EGUF,	SIG1.EGUL,
+			SIG1.HOPR,	SIG1.LOPR,
+			SIG1.DRVH,	SIG1.DRVL,
+			SIG1.PINI,
+		SIG2,
+			SIG2.DESC,	SIG2.UNIT,
+			SIG2.EGUF,	SIG2.EGUL,
+			SIG2.HOPR,	SIG2.LOPR,
+			SIG2.DRVH,	SIG2.DRVL,
+			SIG2.PINI,
+	}
+	{	188,
+		"$(SIG1)",
+			"Signal 1 Description", Percent,
+			100,		0,
+			100,		0,
+			0x7FFF,		0,
+			NO,
+		"$(SIG2)",
+			"Signal 2 Description",	Percent,
+			100,		0,
+			100,		0,
+			0x7FFF,		0,
+			NO,
+	}
+}
+

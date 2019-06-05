@@ -1,0 +1,459 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1317
+y 445
+w 466
+h 254
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+ctlFont "helvetica-medium-r-14.0"
+ctlFontAlign "center"
+btnFont "helvetica-medium-r-14.0"
+btnFontAlign "center"
+fgColor index 14
+bgColor index 7
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 1
+ctlBgColor1 index 1
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 14
+title "Analog Inputs"
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 40
+w 456
+h 208
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 0
+w 456
+h 32
+lineColor index 54
+fill
+fillColor index 54
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 7
+w 97
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 54
+value {
+  "Analog Inputs"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 48
+w 116
+h 192
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 144
+y 52
+w 94
+h 21
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Description"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 52
+w 43
+h 21
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Input"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 368
+y 52
+w 47
+h 21
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Value"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 388
+y 4
+w 48
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-14.0"
+buttonLabel "Config"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "userBhcScreens/aiConfig.edl"
+}
+setPosition {
+  0 "parentWindow"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 68
+y 84
+w 260
+h 26
+controlPv "$(AIN):1.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 1
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 348
+y 80
+w 100
+h 28
+controlPv "$(AIN):1"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 1
+useDisplayBg
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 80
+w 56
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "AIN-1"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 68
+y 164
+w 260
+h 28
+controlPv "$(AIN):3.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 1
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 348
+y 164
+w 100
+h 28
+controlPv "$(AIN):3"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 1
+useDisplayBg
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 164
+w 56
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "AIN-3"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 68
+y 124
+w 260
+h 28
+controlPv "$(AIN):2.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 1
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 348
+y 124
+w 100
+h 28
+controlPv "$(AIN):2"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 1
+useDisplayBg
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 124
+w 56
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "AIN-2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 348
+y 204
+w 100
+h 28
+controlPv "$(AIN):4"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 1
+useDisplayBg
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 68
+y 204
+w 260
+h 28
+controlPv "$(AIN):4.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 1
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 204
+w 56
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "AIN-4"
+}
+endObjectProperties
+

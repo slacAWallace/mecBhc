@@ -1,0 +1,58 @@
+# KL3404 is a 4-ch 12 bit analog input module
+
+#	Load one instance of this template for each instance
+#	of this module.
+#	Macros left to dbLoad time:
+#		SLOT	- Slot number
+#		SIG1	- PV prefix for signal 1
+#		SIG2	- PV prefix for signal 2
+#		SIG3	- PV prefix for signal 3
+#		SIG4	- PV prefix for signal 4
+file KL3404.template
+{
+	pattern
+	{	
+		SIG1, SIG1.DESC,
+			SIG1.EGUF,	SIG1.HOPR,	SIG1.HIGH,	SIG1.HIHI,
+			SIG1.EGUL,	SIG1.LOPR,	SIG1.LOW,	SIG1.LOLO,
+			SIG1.HYST,	SIG1.ADEL,	SIG1.MDEL,
+			SIG1.SMOO,	SIG1.SCAN,	SIG1.UNIT,
+		SIG2, SIG2.DESC,
+			SIG2.EGUF,	SIG2.HOPR,	SIG2.HIGH,	SIG2.HIHI,
+			SIG2.EGUL,	SIG2.LOPR,	SIG2.LOW,	SIG2.LOLO,
+			SIG2.HYST,	SIG2.ADEL,	SIG2.MDEL,
+			SIG2.SMOO,	SIG2.SCAN,	SIG2.UNIT,
+		SIG3, SIG3.DESC,
+			SIG3.EGUF,	SIG3.HOPR,	SIG3.HIGH,	SIG3.HIHI,
+			SIG3.EGUL,	SIG3.LOPR,	SIG3.LOW,	SIG3.LOLO,
+			SIG3.HYST,	SIG3.ADEL,	SIG3.MDEL,
+			SIG3.SMOO,	SIG3.SCAN,	SIG3.UNIT,
+		SIG4, SIG4.DESC,
+			SIG4.EGUF,	SIG4.HOPR,	SIG4.HIGH,	SIG4.HIHI,
+			SIG4.EGUL,	SIG4.LOPR,	SIG4.LOW,	SIG4.LOLO,
+			SIG4.HYST,	SIG4.ADEL,	SIG4.MDEL,
+			SIG4.SMOO,	SIG4.SCAN,	SIG4.UNIT,
+	}
+	{	
+		$(SIG1),	 "analog input 1",
+			10,			10,			10,			10,
+			-10,		-10,		-10,		-10,
+			0,			0,			0,
+			0,			".1 second",		"V",
+		$(SIG2),	 "analog input 2",
+			10,			10,			10,			10,
+			-10,		-10,		-10,		-10,
+			0,			0,			0,
+			0,			".1 second",		"V",
+		$(SIG3),	 "analog input 3",
+			10,			10,			10,			10,
+			-10,		-10,		-10,		-10,
+			0,			0,			0,
+			0,			".1 second",		"V",
+		$(SIG4),	 "analog input 4",
+			10,			10,			10,			10,
+			-10,		-10,		-10,		-10,
+			0,			0,			0,
+			0,			".1 second",		"V",
+	}
+}

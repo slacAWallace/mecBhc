@@ -1,0 +1,39 @@
+# KL3312 is a thermocouple module, 0.1 C per count
+
+# Load one instance of this template for each instance
+#	of this module.
+#	Macros left to dbLoad time:
+#		SLOT	- Slot number
+#		SIG1	- PV prefix for signal 1
+#		SIG2	- PV prefix for signal 2
+file KL3312.template
+{
+	pattern
+	{
+		SIG1, SIG2.EGU, SIG1.DESC,
+			SIG1.HOPR,	SIG1.HIHI,	SIG1.HIGH,
+			SIG1.LOW,	SIG1.LOLO,	SIG1.LOPR,
+			SIG1.HYST,	SIG1.ADEL,	SIG1.MDEL,
+			SIG1.SMOO,	SIG1.SCAN,	
+		SIG2, SIG2.EGU, SIG2.DESC,
+			SIG2.HOPR,	SIG2.HIHI,	SIG2.HIGH,
+			SIG2.LOW,	SIG2.LOLO,	SIG2.LOPR,
+			SIG2.HYST,	SIG2.ADEL,	SIG2.MDEL,
+			SIG2.SMOO,	SIG2.SCAN,	
+	}
+#	Include one instance of the pattern for each instance
+#	of this module, substituting the appropriate slot number
+#	and signal attributes
+	{
+		$(SIG1),	 "C",	"Temperature 1",
+			150,		120,		100,
+			40,			20,			0,
+			0,			0,			0,
+			0,			".1 second",	
+		$(SIG2),	 "C",	"Temperature 2",
+			150,		120,		100,
+			40,			20,			0,
+			0,			0,			0,
+			0,			".1 second",	
+	}
+}

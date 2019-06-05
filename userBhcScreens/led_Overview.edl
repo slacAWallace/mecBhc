@@ -1,0 +1,552 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 835
+y 58
+w 410
+h 332
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+ctlFont "helvetica-medium-r-14.0"
+ctlFontAlign "center"
+btnFont "helvetica-medium-r-14.0"
+btnFontAlign "center"
+fgColor index 14
+bgColor index 7
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 1
+ctlBgColor1 index 1
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 14
+title "THz Analog Outputs"
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 44
+w 400
+h 280
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 0
+w 400
+h 32
+lineColor index 54
+fill
+fillColor index 54
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 7
+w 178
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 54
+value {
+  "Camera Illumination LEDs"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 272
+y 48
+w 116
+h 268
+lineColor index 14
+fill
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 76
+y 52
+w 94
+h 21
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Description"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 300
+y 52
+w 47
+h 21
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Value"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -52
+y 80
+w 440
+h 48
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 18
+y 81
+w 244
+h 28
+controlPv "$(CIL):1.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 8
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 77
+w 100
+h 28
+controlPv "$(CIL):1"
+font "helvetica-medium-r-12.0"
+fgColor index 25
+bgColor index 1
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -58
+y 81
+w 68
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 105
+w 100
+h 20
+fgColor index 14
+bgColor index 1
+2ndBgColor index 25
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(CIL):1"
+controlLabelType "pvName"
+font "helvetica-medium-r-14.0"
+limitsFromDb
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -52
+y 140
+w 440
+h 48
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 18
+y 144
+w 244
+h 28
+controlPv "$(CIL):2.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 8
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 140
+w 100
+h 28
+controlPv "$(CIL):2"
+font "helvetica-medium-r-12.0"
+fgColor index 25
+bgColor index 1
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -58
+y 144
+w 68
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 168
+w 100
+h 20
+fgColor index 14
+bgColor index 1
+2ndBgColor index 25
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(CIL):2"
+controlLabelType "pvName"
+font "helvetica-medium-r-14.0"
+limitsFromDb
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -52
+y 204
+w 440
+h 48
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 18
+y 203
+w 244
+h 28
+controlPv "$(CIL):3.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 8
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 199
+w 100
+h 28
+controlPv "$(CIL):3"
+font "helvetica-medium-r-12.0"
+fgColor index 25
+bgColor index 1
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -58
+y 203
+w 68
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 227
+w 100
+h 20
+fgColor index 14
+bgColor index 1
+2ndBgColor index 25
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(CIL):3"
+controlLabelType "pvName"
+font "helvetica-medium-r-14.0"
+limitsFromDb
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -52
+y 264
+w 440
+h 48
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 18
+y 263
+w 244
+h 28
+controlPv "$(CIL):4.DESC"
+format "string"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 8
+editable
+limitsFromDb
+nullColor index 1
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 259
+w 100
+h 28
+controlPv "$(CIL):4"
+font "helvetica-medium-r-12.0"
+fgColor index 25
+bgColor index 1
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -58
+y 263
+w 68
+h 28
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 282
+y 287
+w 100
+h 20
+fgColor index 14
+bgColor index 1
+2ndBgColor index 25
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(CIL):4"
+controlLabelType "pvName"
+font "helvetica-medium-r-14.0"
+limitsFromDb
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

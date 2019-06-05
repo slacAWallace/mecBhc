@@ -1,0 +1,32 @@
+#	Load one instance of this template for each instance
+#	of this module.
+#	Macros left to dbLoad time:
+#		SLOT	- Slot number
+#		SIG1	- PV prefix for signal 1
+#		SIG2	- PV prefix for signal 2
+#		SIG3	- PV prefix for signal 3
+#		SIG4	- PV prefix for signal 4
+file KL2124.template
+{
+	pattern
+	{	REPROCEVT,
+		SIG1,		SIG1.DESC,
+		SIG1.ZNAM,	SIG1.ONAM,	SIG1.PINI,
+		SIG2,		SIG2.DESC,
+		SIG2.ZNAM,	SIG2.ONAM,	SIG2.PINI,
+		SIG3,		SIG3.DESC,
+		SIG3.ZNAM,	SIG3.ONAM,	SIG3.PINI,
+		SIG4,		SIG4.DESC,
+		SIG4.ZNAM,	SIG4.ONAM,	SIG4.PINI
+	}
+	{	188,
+		$(SIG1),	 "Signal 1 Description",
+		Off,		On,			YES,
+		$(SIG2),	 "Signal 2 Description",
+		Off,		On,			YES,
+		$(SIG3),	 "Signal 3 Description",
+		Off,		On,			YES,
+		$(SIG4),	 "Signal 4 Description",
+		Off,		On,			YES,
+	}
+}

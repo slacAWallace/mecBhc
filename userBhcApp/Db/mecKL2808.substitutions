@@ -1,0 +1,44 @@
+
+file KL2808.template
+{
+	pattern
+	{	SLOT,	REPROCEVT,
+		SIG1,		SIG1.DESC,
+		SIG1.ZNAM,	SIG1.ONAM,	SIG1.PINI,
+		SIG2,		SIG2.DESC,
+		SIG2.ZNAM,	SIG2.ONAM,	SIG2.PINI,
+		SIG3,		SIG3.DESC,
+		SIG3.ZNAM,	SIG3.ONAM,	SIG3.PINI,
+		SIG4,		SIG4.DESC,
+		SIG4.ZNAM,	SIG4.ONAM,	SIG4.PINI
+		SIG5,		SIG5.DESC,
+		SIG5.ZNAM,	SIG5.ONAM,	SIG5.PINI
+		SIG6,		SIG6.DESC,
+		SIG6.ZNAM,	SIG6.ONAM,	SIG6.PINI
+		SIG7,		SIG7.DESC,
+		SIG7.ZNAM,	SIG7.ONAM,	SIG7.PINI
+		SIG8,		SIG8.DESC,
+		SIG8.ZNAM,	SIG8.ONAM,	SIG8.PINI
+	}
+#	Include one instance of the pattern for each instance
+#	of this module, substituting the appropriate slot number
+#	and signal attributes
+	{	3,			188,
+		MEC:USR:DOUT1, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT2, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT3, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT4, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT5, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT6, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT7, "Digital Output <.5A",
+		Off,		On,			NO,
+		MEC:USR:DOUT8, "Digital Output <.5A",
+		Off,		On,			NO,
+	}
+}

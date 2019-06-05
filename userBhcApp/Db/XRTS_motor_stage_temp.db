@@ -1,0 +1,47 @@
+#####
+#These records scale the Micos Motor Stage Temps
+#####
+
+record(ai, "MEC:TC1:MMS:10:TEMP")
+{
+	field(DESC, "X-Stage Temp")
+	field(SCAN, "1 second")
+	field(DTYP, "Raw Soft Channel")
+	field(INP,  "MEC:TC1:MMS:10:RAW_TEMP")
+	field(PREC, "4")
+	field(ASLO, "1")
+	field(AOFF, "-14.0")	
+}
+	
+record(ai, "MEC:TC1:MMS:11:TEMP")
+{
+	field(DESC, "X-Stage Temp")
+	field(SCAN, "1 second")
+	field(DTYP, "Raw Soft Channel")
+	field(INP,  "MEC:TC1:MMS:11:RAW_TEMP")
+	field(PREC, "4")
+	field(ASLO, "1")
+	field(AOFF, "-14.0")	
+}
+
+record(ai, "MEC:TC1:MMS:12:TEMP")
+{
+	field(DESC, "X-Stage Temp")
+	field(SCAN, "1 second")
+	field(DTYP, "Raw Soft Channel")
+	field(INP,  "MEC:TC1:MMS:12:RAW_TEMP")
+	field(PREC, "4")
+	field(ASLO, "1")
+	field(AOFF, "-14.0")	
+}
+
+record(ai, "MEC:TC1:MMS:13:TEMP")
+{
+	field(DESC, "X-Stage Temp")
+	field(SCAN, "1 second")
+	field(DTYP, "Raw Soft Channel")
+	field(INP,  "MEC:TC1:MMS:13:RAW_TEMP")
+	field(PREC, "4")
+	field(ASLO, "1")
+	field(AOFF, "-14.0")	
+}	

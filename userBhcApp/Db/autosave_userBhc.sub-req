@@ -1,0 +1,13 @@
+#
+# userBhc substitutions file
+#
+
+# Generate iocAdmin autosave request 
+file autosave_iocAdmin.tpl-req
+{
+	{
+		# Hack till msi supports empty substitutions
+		_FOOBAR_=_FOOBAR_
+	}
+}
+
